@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="150dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/google_cards_background_top" >
+
+            <ImageView
+                android:id="@+id/image_ev"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/index"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_module"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:textColor="@color/main_color_grey_800"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView android:id="@+id/id_etud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_color_grey_600"
+                        android:textSize="18sp"
+                        />
+                    <TextView android:id="@+id/id_clas_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/main_color_grey_600"
+                        android:textSize="18sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:background="@drawable/google_cards_background_bottom"  >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="20dp">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@drawable/alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/num_seance"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textColor="@color/main_color_grey_800"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2" />
+
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:src="@drawable/calander"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/date_module"
+                        android:gravity="center"
+                        android:textColor="@color/main_color_grey_800"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                </TableRow>
+
+            </TableLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/material_red_800" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

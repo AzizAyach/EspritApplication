@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/White"
+    tools:context="com.esprit.smartesprit.Activity.PCRemoteActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/LinearToolbar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            android:background="@android:color/holo_red_dark"
+
+            style="@style/Toolbar"
+            android:layout_height="90px"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PC Remote"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearToolbar"
+        android:orientation="vertical"
+
+
+        >
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scollRemote"
+    android:scrollbars="vertical"
+    >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/RemoteContenu"
+              >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="5"
+                  >
+          <com.github.florent37.materialtextfield.MaterialTextField
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:mtf_image="@drawable/ip_icon"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="5pt"
+              android:layout_marginRight="5pt"
+              android:background="@color/White"
+              app:mtf_labelColor="@android:color/holo_red_dark"
+              android:layout_weight="5"
+              >
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="your local ip address"
+                  android:id="@+id/pcIp"
+                  android:inputType="text"
+                  android:background="@color/White"
+                  android:textColor="@color/Black"
+                  android:textColorHint="@color/Grey900"
+                  android:textSize="18sp" />
+
+          </com.github.florent37.materialtextfield.MaterialTextField>
+               <!--   <com.gc.materialdesign.views.ButtonFloat
+                      android:id="@+id/configs"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@android:color/white"
+                      materialdesign:animate="true"
+                      android:layout_marginTop="50dp"
+                      android:layout_marginRight="10dp"
+                      android:padding="2dp"
+                      materialdesign:iconDrawable="@drawable/config"
+                      />-->
+              </LinearLayout>
+
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media"
+            android:textSize="25dp"
+            android:textColor="@color/Red"
+            android:layout_margin="10dp"
+            />
+       <HorizontalScrollView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                materialdesign:animate="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                materialdesign:iconDrawable="@drawable/play"
+                />
+
+            <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            materialdesign:animate="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            materialdesign:iconDrawable="@drawable/stop"
+            />
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/volume_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                materialdesign:animate="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                materialdesign:iconDrawable="@drawable/volume_down"
+                />
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/volume_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                materialdesign:animate="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                materialdesign:iconDrawable="@drawable/volume_up"
+                />
+
+
+
+
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                materialdesign:animate="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                materialdesign:iconDrawable="@drawable/previous"
+                />
+            <com.gc.materialdesign.views.ButtonFloat
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                materialdesign:animate="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                materialdesign:iconDrawable="@drawable/next"
+                />
+        </LinearLayout>
+       </HorizontalScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Power Point"
+            android:textSize="25dp"
+            android:textColor="@color/Red"
+            android:layout_margin="10dp"
+            />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/playPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            materialdesign:animate="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            materialdesign:iconDrawable="@drawable/play"
+            />
+
+
+
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/previousPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            materialdesign:animate="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            materialdesign:iconDrawable="@drawable/previous"
+            />
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/stopPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            materialdesign:animate="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            materialdesign:iconDrawable="@drawable/stop"
+            />
+        <com.gc.materialdesign.views.ButtonFloat
+            android:id="@+id/nextPPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            materialdesign:animate="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            materialdesign:iconDrawable="@drawable/next"
+            />
+    </LinearLayout>
+        </HorizontalScrollView>
+          </LinearLayout>
+
+
+
+
+
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Mouse"
+              android:textSize="25dp"
+              android:textColor="@color/Red"
+              android:layout_margin="5dp"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/scrollMouse"
+              android:orientation="vertical">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="300dp"
+                  android:layout_above="@+id/rightclick"
+                  android:clickable="true"
+                  android:layout_margin="10dp"
+                  android:background="@drawable/mouse"
+                  android:id="@+id/mousePad"
+                  android:layout_marginBottom="10dp"/>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:weightSum="2"
+                  android:orientation="horizontal" android:layout_marginBottom="10dp">
+                  <com.gc.materialdesign.views.ButtonRectangle
+                      android:layout_width="match_parent"
+                      android:layout_height="70dp"
+                      android:id="@+id/leftclick"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentRight="true"
+                      android:background="@color/Red"
+                      android:layout_marginRight="10dp"
+                      android:layout_marginLeft="10dp"
+                      android:layout_weight="1"
+                      android:gravity="left"
+
+                      />
+
+                  <com.gc.materialdesign.views.ButtonRectangle
+                      android:layout_width="match_parent"
+                      android:layout_height="70dp"
+                      android:id="@+id/rightclick"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentLeft="true"
+                      android:layout_marginRight="10dp"
+                      android:background="@color/Red"
+                      android:gravity="right"
+                      android:layout_weight="1"
+                      />
+
+              </LinearLayout>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="10dp"
+                  android:layout_gravity="center_horizontal"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+
+                  >
+
+
+                  <com.gc.materialdesign.views.CheckBox
+                      android:id="@+id/checkMouse"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@color/Red"
+                      materialdesign:check="false" />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Enable Mouse "
+                      android:textColor="@color/Grey900"
+                      android:textSize="14pt"
+                      android:layout_marginTop="3dp"
+                      />
+
+              </LinearLayout>
+          </LinearLayout>
+    </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

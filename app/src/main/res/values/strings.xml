@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EspritApplication</string>
+    <string name="fontello_user">&#xe81b;</string>
+    <string name="fontello_password">&#xe823;</string>
+    <string name="login">LOGIN</string>
+    <string name="fargmentLogement">Logement</string>
+    <string name="fargmentCovoiturage">Covoiturage</string>
+    <string-array name="seance">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_enseignat__accueil">Enseignat_Accueil</string>
+</resources>

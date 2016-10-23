@@ -1,0 +1,39 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="esprit.org.espritappliaction.Fragment.ExtraLogementFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:padding="50dp"
+    android:weightSum="100">
+
+    <com.gc.materialdesign.views.ButtonFloat
+
+        android:id="@+id/add"
+        android:layout_weight="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        />
+    <view
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"></view>
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/display"
+        android:layout_weight="40"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        />
+</LinearLayout>
+
+</FrameLayout>

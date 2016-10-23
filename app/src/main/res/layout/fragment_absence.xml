@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="esprit.org.espritappliaction.Fragment.AbsenceFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:id="@+id/scroll">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+   <Spinner
+       android:layout_width="match_parent"
+       android:id="@+id/idclas"
+       style="@style/spinner_style"
+
+       android:layout_height="wrap_content"></Spinner>
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/idseance"
+        style="@style/spinner_style"
+        android:layout_height="wrap_content"></Spinner>
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/idmodule"
+        style="@style/spinner_style"
+        android:layout_height="wrap_content"></Spinner>
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleY="0.8"
+        android:calendarTextColor="@color/material_red_600"
+        android:yearListSelectorColor="@color/material_red_600"
+        android:id="@+id/datepiker"></DatePicker>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmer"
+            android:textSize="20dp"
+            android:textColor="@color/carbon_white"
+            android:text="Confirmer"
+            android:background="@color/material_red_600"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleabs">
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>
+    <com.shamanland.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_keyboard_arrow_up_white_24dp"
+        app:floatingActionButtonSize="normal"
+        android:foregroundGravity="bottom|right"
+        />
+</RelativeLayout>
